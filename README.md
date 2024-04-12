@@ -1,0 +1,1 @@
+only html scss & vanilla javascript to test basic of web development
