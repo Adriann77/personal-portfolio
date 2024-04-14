@@ -1,7 +1,9 @@
 @use '../colors';
 
 header {
+	position: relative;
 	display: flex;
+
 	height: 80vh;
 	.left {
 		display: flex;
@@ -37,7 +39,7 @@ header {
 				background-color: transparent;
 				font-size: 2rem;
 				transition: all 0.3s;
-                cursor: pointer;
+				cursor: pointer;
 				a {
 					text-decoration: none;
 				}
@@ -49,9 +51,8 @@ header {
 				}
 
 				&:hover {
-				background-color: colors.$darker-white;
-
-				
+					background-color: colors.$light;
+					box-shadow: 0px 0px 10px colors.$purple;
 				}
 			}
 
@@ -64,15 +65,47 @@ header {
 
 				&:hover {
 					background-color: colors.$lighter-purple;
-
+					box-shadow: 0px 0px 10px colors.$purple;
 				}
 			}
 		}
 	}
 	.right {
-		background-image: url(https://previews.123rf.com/images/feedough/feedough1802/feedough180200279/95311447-portrait-of-an-elegant-man-in-tuxedo-smoking-cigarette-on-white-background.jpg);
-		background-size: cover;
-		width: 50%;
+		background-image: url(../../assets/one.png);
+		background-size: contain;
 		background-repeat: no-repeat;
+		background-position: 100% 60%;
+
+		width: 770px;
+	}
+
+	.arrow-down {
+		position: absolute;
+		bottom: 0;
+		right: 45%;
+		background: none;
+		border: none;
+
+		i {
+			font-size: 4rem;
+			background-color: transparent;
+			color: colors.$lighter-purple;
+			animation: bounce 1s infinite;
+			cursor: pointer;
+			padding: 2rem;
+            
+		}
+	}
+}
+
+@keyframes bounce {
+	0% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(-10px);
+	}
+	100% {
+		transform: translateY(0px);
 	}
 }
