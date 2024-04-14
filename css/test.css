@@ -1,0 +1,18 @@
+.test {
+  display: flex;
+  max-width: 210px;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.test div {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+}
+
+@media (min-width: 768px) {
+  .test {
+    display: flex;
+    max-width: 315px;
+  }
+}/*# sourceMappingURL=test.css.map */

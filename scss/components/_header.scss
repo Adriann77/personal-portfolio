@@ -1,0 +1,78 @@
+@use '../colors';
+
+header {
+	display: flex;
+	height: 80vh;
+	.left {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		width: 50%;
+
+		.text {
+			h1 {
+				font-size: 4rem;
+				font-weight: normal;
+			}
+
+			p {
+				font-size: 2rem;
+				max-width: 450px;
+				text-align: end;
+			}
+			span {
+				color: colors.$purple;
+			}
+		}
+
+		.buttons {
+			margin: 2rem;
+			display: flex;
+			gap: 1rem;
+			button {
+				padding: 1.5rem 2.5rem;
+				border-radius: 8px;
+				border: none;
+				background-color: transparent;
+				font-size: 2rem;
+				transition: all 0.3s;
+                cursor: pointer;
+				a {
+					text-decoration: none;
+				}
+			}
+			.numOne {
+				border: 2px solid colors.$purple;
+				a {
+					color: colors.$purple;
+				}
+
+				&:hover {
+				background-color: colors.$darker-white;
+
+				
+				}
+			}
+
+			.numTwo {
+				background-color: colors.$purple;
+				border: 2px solid colors.$purple;
+				a {
+					color: colors.$white;
+				}
+
+				&:hover {
+					background-color: colors.$lighter-purple;
+
+				}
+			}
+		}
+	}
+	.right {
+		background-image: url(https://previews.123rf.com/images/feedough/feedough1802/feedough180200279/95311447-portrait-of-an-elegant-man-in-tuxedo-smoking-cigarette-on-white-background.jpg);
+		background-size: cover;
+		width: 50%;
+		background-repeat: no-repeat;
+	}
+}

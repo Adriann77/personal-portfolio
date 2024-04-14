@@ -1,9 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+.button {
+  padding: 0.75rem;
+  margin: 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: #9fdcf9;
+}
+
+header {
+  display: flex;
+  height: 80vh;
+}
+header .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+}
+header .left .text h1 {
+  font-size: 4rem;
+  font-weight: normal;
+}
+header .left .text p {
+  font-size: 2rem;
+  max-width: 450px;
+  text-align: end;
+}
+header .left .text span {
+  color: #9534e9;
+}
+header .left .buttons {
+  margin: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+header .left .buttons button {
+  padding: 1.5rem 2.5rem;
+  border-radius: 8px;
+  border: none;
+  background-color: transparent;
+  font-size: 2rem;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+header .left .buttons button a {
+  text-decoration: none;
+}
+header .left .buttons .numOne {
+  border: 2px solid #9534e9;
+}
+header .left .buttons .numOne a {
+  color: #9534e9;
+}
+header .left .buttons .numOne:hover {
+  background-color: #f8f3f3;
+}
+header .left .buttons .numTwo {
+  background-color: #9534e9;
+  border: 2px solid #9534e9;
+}
+header .left .buttons .numTwo a {
+  color: #ffffff;
+}
+header .left .buttons .numTwo:hover {
+  background-color: #a150e8;
+}
+header .right {
+  background-image: url(https://previews.123rf.com/images/feedough/feedough1802/feedough180200279/95311447-portrait-of-an-elegant-man-in-tuxedo-smoking-cigarette-on-white-background.jpg);
+  background-size: cover;
+  width: 50%;
+  background-repeat: no-repeat;
+}
+
+.gallery {
+  --size: 90px;
+  display: grid;
+  grid-template-columns: repeat(5, var(--size));
+  grid-auto-rows: var(--size);
+  margin-bottom: var(--size);
+  place-items: start center;
+  gap: 3px;
+}
+.gallery:has(:hover) img:not(:hover), .gallery:has(:focus) img:not(:focus) {
+  filter: brightness(0.5) contrast(0.5);
+}
+.gallery img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: calc(var(--size) * 2);
+  height: calc(var(--size) * 2);
+  -webkit-clip-path: path("M90,10 C100,0 100,0 110,10 190,90 190,90 190,90 200,100 200,100 190,110 190,110 110,190 110,190 100,200 100,200 90,190 90,190 10,110 10,110 0,100 0,100 10,90Z");
+          clip-path: path("M90,10 C100,0 100,0 110,10 190,90 190,90 190,90 200,100 200,100 190,110 190,110 110,190 110,190 100,200 100,200 90,190 90,190 10,110 10,110 0,100 0,100 10,90Z");
+  transition: filter 0.75s, -webkit-clip-path 0.25s;
+  transition: clip-path 0.25s, filter 0.75s;
+  transition: clip-path 0.25s, filter 0.75s, -webkit-clip-path 0.25s;
+  grid-column: auto/span 2;
+  border-radius: 5px;
+}
+.gallery img:nth-child(4n-1) {
+  grid-column: 2/span 2;
+}
+.gallery img:hover, .gallery img:focus {
+  -webkit-clip-path: path("M0,0 C0,0 200,0 200,0 200,0 200,100 200,100 200,100 200,200 200,200 200,200 100,200 100,200 100,200 100,200 0,200 0,200 0,100 0,100 0,100 0,100 0,100Z");
+          clip-path: path("M0,0 C0,0 200,0 200,0 200,0 200,100 200,100 200,100 200,200 200,200 200,200 100,200 100,200 100,200 100,200 0,200 0,200 0,100 0,100 0,100 0,100 0,100Z");
+  z-index: 1;
+  transition: filter 0.25s, -webkit-clip-path 0.25s;
+  transition: clip-path 0.25s, filter 0.25s;
+  transition: clip-path 0.25s, filter 0.25s, -webkit-clip-path 0.25s;
+}
+.gallery img:focus {
+  outline: 1px dashed black;
+  outline-offset: -5px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Raleway", sans-serif;
 }
 
-body {
-  color: #1c1c1c;
+main .about {
+  height: 100vh;
+  background-color: #f8f3f3;
 }/*# sourceMappingURL=style.css.map */
