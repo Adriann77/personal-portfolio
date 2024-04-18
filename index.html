@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <script src="https://kit.fontawesome.com/cec7ae2ab3.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -14,48 +19,68 @@
 
 
 
-    <header class="header leftGap">
-        <div class="left">
-            <div class="text">
-                <h1>Hi, I'm <span>Adrian</span></h1>
-                <p>Passionate <span>{ front-end }</span> developer</p>
+    <header>
+        <nav>
+            <div class="nav-mobile">
+                <button class="hamburger">
+                    <span class="hamburger__box">
+                        <span class="hamburger__inner"></span>
+                    </span>
+                </button>
+                
+                <div class="blur "></div>
+                <div class="navigation">
+                        <ul class="navigation__list">
+                            <li class="navigation__item"><a href="">About</a></li>
+                            <li class="navigation__item"><a href="">Projects</a></li>
+                            <li class="navigation__item"><a href="">Contact</a></li>
+                            <li class="navigation__item"><a href="">Tech-stack</a></li>
+
+                        </ul>
+                    </div>
+
+
             </div>
-            <div class="buttons">
-                <button class="numTwo"><a href=""><i class="fa-solid fa-download"></i> Download CV</a></button>
-                <button class="numOne"><a href=""><i class="fa-solid fa-address-card"></i> My Projects</a></button>
             </div>
-        </div>
-        <div class="right"></div>
-        <div class="center-button">
-            <button class="arrow-down"><i class="fa-solid fa-angle-down"></i></button>
-        </div>
+            <div class="nav-desktop">
+                <ul>
+                    <li class="navigation__item"><a href="">Projects</a></li>
+                    <li class="navigation__item"><a href="">About</a></li>
+                    <li class="navigation__item"><a href="">Contact</a></li>
+                    <li class="navigation__item"><a href="">Tech-stack</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
     <main>
-        <!-- <section class="skills container text-center">
-            <h2 class="mb-5">Moje umiejętności</h2>
-            <article class="gallery">
-                <img src="./assets/bootstra.png" alt="guitar player at concert" />
-                <img src="./assets/css.jpeg" alt="duo singing" />
-                <img src="./assets/github.png" alt="crowd cheering" />
-                <img src="./assets/html.png" alt="singer performing" />
-                <img src="./assets/javascript.png" alt="singer fistbumping crowd" />
-                <img src="./assets/react.png" alt="man with a guitar singing" />
-                <img src="./assets/tailwind.png" alt="crowd looking at a lighted stage" />
-                <img src="./assets/npm.png" alt="woman singing on stage" />
-                <img src="./assets/jest.png" alt="woman singing on stage" />
-                <img src="./assets/typescript.png" alt="woman singing on stage" />
-
-            </article>
-        </section> -->
-        <section style="height: 100vh;" class="about">
+        <section id="landing" class="landing">
+            <h1>Hi, my name is</h1>
+            <h2>Adrian Klimas,</h2>
+            <h3>Junior Frontend Developer.</h3>
+            <p class="landing_description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta harum quis consequatur, saepe asperiores
+                velit!
+            </p>
+            <div class="landing_links">
+                <a href="">
+                    <button>RESUME</button>
+                </a>
+                <div class="landing_social">
+                    <a href=""><img loading="lazy"
+                            src="https://jakubfronczyk.com/_ipx/w_96,q_75/%2F_next%2Fstatic%2Fmedia%2Fgithub-icon.d148c9a7.png?url=%2F_next%2Fstatic%2Fmedia%2Fgithub-icon.d148c9a7.png&w=96&q=75"
+                            alt=""></a>
+                    <a href=""><img loading="lazy"
+                            src="https://jakubfronczyk.com/_ipx/w_96,q_75/%2F_next%2Fstatic%2Fmedia%2Flinkedin-icon.1637f801.png?url=%2F_next%2Fstatic%2Fmedia%2Flinkedin-icon.1637f801.png&w=96&q=75"
+                            alt=""></a>
+                </div>
+            </div>
 
         </section>
+
     </main>
 
-    <footer>
 
-    </footer>
 
     <script src="./js/script.js"></script>
 
