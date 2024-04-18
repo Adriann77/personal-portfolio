@@ -1,0 +1,11 @@
+@media (min-width: 768px) {
+    header{
+
+        .nav-desktop {
+            display: block;
+        }
+        .nav-mobile{
+            display: none;
+        }
+    }
+}
