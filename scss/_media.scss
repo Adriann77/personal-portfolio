@@ -1,11 +1,42 @@
 @media (min-width: 768px) {
-    header{
+	header {
+		.nav-desktop {
+			display: block;
+		}
+		.nav-mobile {
+			display: none;
+		}
+	}
+}
 
-        .nav-desktop {
-            display: block;
-        }
-        .nav-mobile{
-            display: none;
-        }
-    }
+@media (min-width: 996px) {
+	main {
+		.landing {
+			display: flex;
+
+			h1 {
+				font-size: 2rem;
+			}
+			h2,
+			h3 {
+				font-size: 5rem;
+			}
+			p {
+				font-size: 2rem;
+			}
+
+			&__text {
+				max-width: 1000px;
+                font-weight: 300;
+			}
+
+			&__links {
+				a {
+					.resumeBtn {
+						font-size: 3rem;
+					}
+				}
+			}
+		}
+	}
 }

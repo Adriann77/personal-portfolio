@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My personal portfolio website">
     <title>Portfolio</title>
     <script src="https://kit.fontawesome.com/cec7ae2ab3.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,30 +22,30 @@
 
     <header>
         <nav>
-            <div class="nav-mobile">
+            <div class="nav nav-mobile">
                 <button class="hamburger">
                     <span class="hamburger__box">
                         <span class="hamburger__inner"></span>
                     </span>
                 </button>
 
-                <div class="blur"></div>
+
                 <div class="navigation">
                     <ul class="navigation__list">
                         <li class="navigation__item"><a href="">About</a></li>
-                        <li class="navigation__item"><a href="">Projects</a></li>
+                        <li class="navigation__item"><a href="#projects-section">Projects</a></li>
                         <li class="navigation__item"><a href="">Contact</a></li>
                         <li class="navigation__item"><a href="">Tech-stack</a></li>
                     </ul>
                 </div>
 
             </div>
-            </div>
-            <div class="nav-desktop ">
-                <div class="wrapper">
 
+            </div>
+            <div class="nav nav-desktop ">
+                <div class="wrapper">
                     <ul>
-                        <li class="navigation__item"><a href="">Projects</a></li>
+                        <li class="navigation__item nav--item"><a href="#projects-section">Projects</a></li>
                         <li class="navigation__item"><a href="">Contact</a></li>
                         <li class="navigation__item"><a href="">Tech-stack</a></li>
                         <li class="navigation__item"><a href="">About</a></li>
@@ -58,7 +59,7 @@
         <div class="wrapper">
             <section id="landing" class="landing">
 
-                <div>
+                <div class="landing__text">
                     <h1>Hello, my name is</h1>
                     <h2>Adrian Klimas</h2>
                     <h3>Intern Frontend Developer</h3>
@@ -72,22 +73,125 @@
 
                         <button class="resumeBtn"><i class="fa-solid fa-download"></i> Resume</button>
                     </a>
-                    <div class="landing__social">
-                        <a target="_blank" href="https://github.com/Adriann77"><img loading="lazy"
-                                src="https://jakubfronczyk.com/_ipx/w_96,q_75/%2F_next%2Fstatic%2Fmedia%2Fgithub-icon.d148c9a7.png?url=%2F_next%2Fstatic%2Fmedia%2Fgithub-icon.d148c9a7.png&w=96&q=75"
-                                alt=""></a>
-                        <a target="_blank" href="https://www.linkedin.com/in/adrian-klimas-87b169281/"><img
-                                loading="lazy"
-                                src="https://jakubfronczyk.com/_ipx/w_96,q_75/%2F_next%2Fstatic%2Fmedia%2Flinkedin-icon.1637f801.png?url=%2F_next%2Fstatic%2Fmedia%2Flinkedin-icon.1637f801.png&w=96&q=75"
-                                alt=""></a>
+                    <div class="landing__social icon">
+                        <a target="_blank" href="https://github.com/Adriann77"><i class="fa-brands fa-github"></i>
+                        </a>
+                        <a target="_blank" href="https://www.linkedin.com/in/adrian-klimas-87b169281/"><i
+                                class="fa-brands fa-linkedin"></i></a>
                     </div>
                 </div>
 
             </section>
 
-            <section style="height: 100vh; background-color: #000;">
+            <section class="section" id="projects-section">
+                <h3 class="heading">Check out my projects</h3>
+                <div class="projects">
+                    <div class="projects__project">
+                        <h4 class="projects__project--title">GPT-QuizBuilder</h4>
+                        <div class="projects__project--img"></div>
 
-            </section>
+                        <p class="projects__project--description">GPT-QuizBuilder, zaprojektowany w ramach inicjatywy
+                            ‘100 commitów’. To projekt, który wykorzystuje zaawansowane
+                            możliwości OpenAI API do tworzenia spersonalizowanych quizów. To nowatorskie narzędzie
+                            zostało stworzone z myślą o
+                            nauczycielach, uczniach i wszystkich, którzy są zainteresowani ciągłą nauką. Umożliwia ono
+                            łatwe i intuicyjne tworzenie
+                            quizów, które są dostosowane do indywidualnych zainteresowań oraz poziomu trudności</p>
+                        <div class="projects__project--techstack">
+                            <p>Technologies used:</p>
+                            <ul>
+                                <li><img src="./assets/typescript.png" alt=""></li>
+                                <li><img src="./assets/tailwind.png" alt=""></li>
+                                <li><img src="./assets/react.png" alt=""></li>
+                                <li><img src="./assets/playwright.png" alt=""></li>
+                            </ul>
+                        </div>
+                        <div class="projects__project--links">
+                            <a class="projects__project--github icon" target="_blank"
+                                href="https://github.com/Adriann77"><i class="fa-brands fa-github"></i></a>
+                            <a class="projects__project--live icon" target="_blank"
+                                href="https://gpt-quizbuilder.netlify.app/"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="projects__project">
+                        <h4 class="projects__project--title">Tamagotchi</h4>
+                        <div class="projects__project--img second"></div>
+
+                        <p class="projects__project--description">This project is a web-based recreation of the classic Tamagotchi game, offering users a nostalgic virtual pet
+                        experience. The design, meticulously crafted on Figma, ensures an aesthetically pleasing and user-friendly interface.</p>
+                        <div class="projects__project--techstack">
+                            <p>Technologies used:</p>
+                            <ul>
+                                <li><img src="./assets/javascript.png" alt=""></li>
+                                <li><img src="./assets/scss.png" alt=""></li>
+                                <li><img src="./assets/html.png" alt=""></li>
+
+                            </ul>
+                        </div>
+                        <div class="projects__project--links">
+                            <a class="projects__project--github icon" target="_blank"
+                                href="https://github.com/Adriann77/tamagotchi"><i class="fa-brands fa-github"></i></a>
+                            <a class="projects__project--live icon" target="_blank"
+                                href="https://adriann77.github.io/tamagotchi/"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="projects__project">
+                        <h4 class="projects__project--title">Fischkapp</h4>
+                        <div class="projects__project--img third"></div>
+
+                        <p class="projects__project--description">Fischkapp is a React/SCSS-based web application designed to replicate the concept of flashcards for learning purposes.
+                        The project focuses on providing a user-friendly interface for creating, editing, and deleting flashcards. It
+                        incorporates smooth animations for flipping cards and is connected to both a third-party API for additional content and
+                        a backend for data storage.</p>
+                        <div class="projects__project--techstack">
+                            <p>Technologies used:</p>
+                            <ul>
+                                <li><img src="./assets/react.png" alt=""></li>
+                                <li><img src="./assets/typescript.png" alt=""></li>
+                                <li><img src="./assets/scss.png" alt=""></li>
+                                <li><img src="/assets/jest.png" alt=""></li>
+                            </ul>
+                        </div>
+                        <div class="projects__project--links">
+                            <a class="projects__project--github icon" target="_blank"
+                                href="https://github.com/Adriann77/fischkapp"><i class="fa-brands fa-github"></i></a>
+                            <a class="projects__project--live icon" target="_blank"
+                                href="https://fischkapp.netlify.app/"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="projects__project">
+                        <h4 class="projects__project--title">Memory game</h4>
+                        <div class="projects__project--img fourth"></div>
+
+                        <p class="projects__project--description">
+                            Memory Game is a classic memory matching game where the goal is to find pairs of matching images. The application is
+                            developed using React and TypeScript in arcade theme</p>
+                        <div class="projects__project--techstack">
+                            <p>Technologies used:</p>
+                            <ul>
+                                <li><img src="./assets/react.png" alt=""></li>
+                                <li><img src="./assets/typescript.png" alt=""></li>
+                                <li><img src="./assets/scss.png" alt=""></li>
+                            </ul>
+                        </div>
+                        <div class="projects__project--links">
+                            <a class="projects__project--github icon" target="_blank"
+                                href="https://github.com/Adriann77/MemoryGame"><i class="fa-brands fa-github"></i></a>
+                            <a class="projects__project--live icon" target="_blank"
+                                href="https://memory-game-byadr.netlify.app/"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+        </div>
+        </section>
         </div>
 
     </main>
