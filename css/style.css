@@ -56,15 +56,15 @@ nav .nav ul .navigation__item a {
 nav .nav ul .navigation__item a::after {
   position: absolute;
   content: "";
-  width: 33%;
+  width: 20px;
   height: 75%;
   border-bottom: 1px solid #e0ff1b;
-  left: -1rem;
+  left: 0;
   bottom: -0.5rem;
   transition: all 0.3s;
 }
 nav .nav ul .navigation__item a:hover::after {
-  width: 122%;
+  width: 100%;
   border-bottom: 2px solid #fff;
 }
 
@@ -77,6 +77,7 @@ nav .nav ul .navigation__item a:hover::after {
 html {
   font-size: 10px;
   scroll-behavior: smooth;
+  scroll-padding: 3.5rem;
 }
 
 body {
@@ -114,6 +115,10 @@ body {
   color: #e0ff1b;
 }
 
+.nav-desktop--onScroll {
+  display: none;
+}
+
 header .nav-mobile {
   top: 0;
   overflow: hidden;
@@ -147,6 +152,7 @@ header .hamburger__inner {
   height: 3px;
   background-color: #e0ff1b;
   position: absolute;
+  outline: 1px solid black;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
@@ -158,6 +164,7 @@ header .hamburger__inner::after {
   height: 3px;
   background-color: #e0ff1b;
   position: absolute;
+  outline: 1px solid black;
   content: "";
   left: 0;
   transition: transform 0.2s 0.2s ease-in-out;
@@ -295,29 +302,60 @@ main #projects-section .projects__project {
   flex-direction: column;
 }
 main #projects-section .projects__project--img {
-  width: 100%;
+  position: relative;
   padding: 2rem 0;
-  background-image: url(../assets//SCR-20240419-rynk.png);
-  height: 200px;
+  margin: 2rem;
+  height: 500px;
+  border-radius: 35px;
+  border: 2px solid #e0ff1b;
+  overflow: hidden;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
+main #projects-section .projects__project--img::before {
+  position: absolute;
+  content: "";
+  width: 98%;
+  height: 98%;
+  border: 6px solid black;
+  top: 0;
+  left: -3px;
+  border-radius: 35px;
+}
+main #projects-section .projects__project--img::after {
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 2%;
+  background-color: black;
+  top: -1px;
+  right: 50%;
+  transform: translateX(50%);
+  border-radius: 20px;
+}
+main #projects-section .projects__project .first {
+  background-image: url(../assets/gptquizbuilder.jpeg);
+}
 main #projects-section .projects__project .second {
-  background-image: url(../assets/SCR-20240420-qzus.png);
+  background-image: url(../assets/tamagotchi.jpeg);
 }
 main #projects-section .projects__project .third {
-  background-image: url(../assets/SCR-20240420-rbnn.png);
+  background-image: url(../assets/fischkapp.jpeg);
 }
 main #projects-section .projects__project .fourth {
-  background-image: url(../assets/SCR-20240420-rcwz.jpeg);
+  background-image: url(../assets/memorygame.jpeg);
 }
 main #projects-section .projects__project--title {
-  color: #e0ff1b;
   font-size: 2.5rem;
   margin-top: 2rem;
   text-align: center;
   z-index: 1;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+main #projects-section .projects__project--title span {
+  color: #e0ff1b;
 }
 main #projects-section .projects__project--description {
   padding: 1rem;
@@ -330,7 +368,7 @@ main #projects-section .projects__project--description::after {
 main #projects-section .projects__project--links {
   display: flex;
   gap: 2rem;
-  padding: 2rem 0;
+  margin: 0 0 2rem 0;
   justify-content: flex-end;
   margin-right: 1.5rem;
 }
@@ -349,12 +387,11 @@ main #projects-section .projects__project--techstack ul {
   display: flex;
   gap: 1rem;
   list-style: none;
-  justify-content: space-around;
 }
 main #projects-section .projects__project--techstack ul li img {
-  width: 30px;
+  width: 40px;
   border-radius: 8px;
-  height: 30px;
+  height: 40px;
 }
 main #projects-section hr {
   width: 100%;
@@ -363,7 +400,7 @@ main #projects-section hr {
   color: #fff;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   header .nav-desktop {
     display: block;
   }
@@ -371,7 +408,40 @@ main #projects-section hr {
     display: none;
   }
 }
+@media (min-width: 768px) {
+  header .nav-desktop {
+    display: block;
+  }
+  header .nav-mobile {
+    display: none;
+  }
+  .landing__text {
+    width: 500px;
+  }
+}
 @media (min-width: 996px) {
+  main .landing {
+    display: flex;
+  }
+  main .landing h1 {
+    font-size: 2rem;
+  }
+  main .landing h2,
+  main .landing h3 {
+    font-size: 5rem;
+  }
+  main .landing p {
+    font-size: 2rem;
+  }
+  main .landing__text {
+    max-width: 1000px;
+    font-weight: 300;
+  }
+  main .landing__links a .resumeBtn {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1200px) {
   main .landing {
     display: flex;
   }

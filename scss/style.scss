@@ -11,6 +11,7 @@
 html {
 	font-size: 10px;
 	scroll-behavior: smooth;
+	scroll-padding: 3.5rem;
 }
 
 body {
@@ -51,6 +52,10 @@ body {
 	}
 }
 
+.nav-desktop--onScroll {
+	display: none;
+}
+
 header {
 	.nav-mobile {
 		top: 0;
@@ -62,7 +67,7 @@ header {
 		padding: 1rem;
 		display: inline-block;
 		cursor: pointer;
-        background: none;
+		background: none;
 
 		border: 0;
 		margin: 0;
@@ -95,7 +100,7 @@ header {
 
 	.hamburger__inner {
 		@include hamburger-line;
-
+		outline: 1px solid black;
 		left: 0;
 		top: 50%;
 		transform: translateY(-50%);
@@ -105,7 +110,7 @@ header {
 	.hamburger__inner::before,
 	.hamburger__inner::after {
 		@include hamburger-line;
-
+		outline: 1px solid black;
 		content: '';
 		left: 0;
 		transition: transform 0.2s 0.2s ease-in-out;
@@ -260,53 +265,82 @@ main {
 	}
 
 	#projects-section {
-
-
-        .projects__project:last-of-type{
-            hr{
-                display: none;
-            }
-        }
+		.projects__project:last-of-type {
+			hr {
+				display: none;
+			}
+		}
 
 		.projects__project {
 			display: flex;
 			flex-direction: column;
 
-
 			&--img {
-				width: 100%;
+				position: relative;
 				padding: 2rem 0;
-				background-image: url(../assets//SCR-20240419-rynk.png);
-				height: 200px;
+				margin: 2rem;
+				height: 500px;
+				border-radius: 35px;
+				border: 2px solid colors.$lime;
+				overflow: hidden;
 				background-size: contain;
 				background-repeat: no-repeat;
 				background-position: center;
+
+				&::before {
+					position: absolute;
+					content: '';
+					width: 98%;
+					height: 98%;
+					border: 6px solid black;
+					top: 0;
+					left: -3px;
+					border-radius: 35px;
+				}
+
+				&::after {
+					position: absolute;
+					content: '';
+					width: 20%;
+					height: 2%;
+					background-color: black;
+					top: -1px;
+					right: 50%;
+					transform: translateX(50%);
+					border-radius: 20px;
+				}
 			}
 
-            .second{
-                background-image: url(../assets/SCR-20240420-qzus.png);
-            }
+			.first {
+				background-image: url(../assets/gptquizbuilder.jpeg);
+			}
 
-            .third{
-                background-image: url(../assets/SCR-20240420-rbnn.png);
-            }
+			.second {
+				background-image: url(../assets/tamagotchi.jpeg);
+			}
 
-            .fourth{
-                background-image: url(../assets/SCR-20240420-rcwz.jpeg);
-            }
+			.third {
+				background-image: url(../assets/fischkapp.jpeg);
+			}
+
+			.fourth {
+				background-image: url(../assets/memorygame.jpeg);
+			}
 
 			&--title {
-				color: colors.$lime;
 				font-size: 2.5rem;
-                margin-top: 2rem;
-
-                text-align: center;
-
+				margin-top: 2rem;
+				text-align: center;
 				z-index: 1;
+				font-weight: 300;
+				letter-spacing: 1px;
+				span {
+					color: colors.$lime;
+				}
 			}
 
 			&--description {
-                padding: 1rem;
+				padding: 1rem;
 				text-align: left;
 
 				&::after {
@@ -318,7 +352,7 @@ main {
 			&--links {
 				display: flex;
 				gap: 2rem;
-				padding: 2rem 0;
+				margin: 0 0 2rem 0;
 				justify-content: flex-end;
 				margin-right: 1.5rem;
 			}
@@ -331,21 +365,19 @@ main {
 				p {
 					color: colors.$lime;
 					font-size: 1.5rem;
-                    margin-bottom: 1.5rem;
+					margin-bottom: 1.5rem;
 				}
 
 				ul {
-
 					display: flex;
 					gap: 1rem;
 					list-style: none;
-					justify-content: space-around;
 
 					li {
 						img {
-							width: 30px;
+							width: 40px;
 							border-radius: 8px;
-							height: 30px;
+							height: 40px;
 						}
 					}
 				}

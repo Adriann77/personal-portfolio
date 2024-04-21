@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+@media (min-width: 576px) {
 	header {
 		.nav-desktop {
 			display: block;
@@ -8,8 +8,57 @@
 		}
 	}
 }
+@media (min-width: 768px) {
+	header {
+		.nav-desktop {
+			display: block;
+		}
+		.nav-mobile {
+			display: none;
+		}
+	}
+
+    .landing{
+        
+        &__text{
+            width: 500px;
+        }    
+        
+    }
+}
 
 @media (min-width: 996px) {
+	main {
+		.landing {
+			display: flex;
+
+			h1 {
+				font-size: 2rem;
+			}
+			h2,
+			h3 {
+				font-size: 5rem;
+			}
+			p {
+				font-size: 2rem;
+			}
+
+			&__text {
+				max-width: 1000px;
+                font-weight: 300;
+			}
+
+			&__links {
+				a {
+					.resumeBtn {
+						font-size: 3rem;
+					}
+				}
+			}
+		}
+	}
+}
+@media (min-width: 1200px) {
 	main {
 		.landing {
 			display: flex;

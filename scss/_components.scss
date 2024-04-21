@@ -65,17 +65,17 @@ nav {
 					&::after {
 						position: absolute;
 						content: '';
-						width: 33%;
+						width: 20px;
 						height: 75%;
 
 						border-bottom: 1px solid colors.$lime;
-						left: -1rem;
+						left: 0;
 						bottom: -0.5rem;
 						transition: all 0.3s;
 					}
 
 					&:hover::after {
-						width: 122%;
+						width: 100%;
 						border-bottom: 2px solid colors.$white;
 					}
 				}
