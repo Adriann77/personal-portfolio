@@ -15,7 +15,7 @@
   height: 1px;
   background-color: #e0ff1b;
   position: absolute;
-  margin: 0 1rem;
+  margin: 0 2rem;
   top: 50%;
 }
 
@@ -68,6 +68,43 @@ nav .nav ul .navigation__item a:hover::after {
   border-bottom: 2px solid #fff;
 }
 
+.phone {
+  position: relative;
+  width: 340px;
+  margin: 2rem auto;
+  height: 555px;
+  border: 5px solid rgb(29, 164, 122);
+  border-radius: 2rem;
+  background-image: url(../assets/tamagotchi.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 15 center;
+  z-index: 1;
+}
+.phone::before {
+  content: "";
+  width: 317.5px;
+  height: 531px;
+  position: absolute;
+  border: 8px solid #000;
+  border-radius: 2rem;
+  top: -1px;
+  left: -2px;
+  z-index: 0;
+}
+.phone::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 50%;
+  transform: translateX(50%);
+  width: 25%;
+  height: 15px;
+  background-color: #000;
+  z-index: -1;
+  border-radius: 20px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -115,10 +152,6 @@ body {
   color: #e0ff1b;
 }
 
-.nav-desktop--onScroll {
-  display: none;
-}
-
 header .nav-mobile {
   top: 0;
   overflow: hidden;
@@ -131,7 +164,8 @@ header .hamburger {
   background: none;
   border: 0;
   margin: 0;
-  right: 0;
+  right: 1rem;
+  top: 1rem;
   z-index: 100;
 }
 header .hamburger--active {
@@ -294,118 +328,122 @@ main .landing p::after {
   content: ".";
   color: #e0ff1b;
 }
-main #projects-section .projects__project:last-of-type hr {
+main .projects-section .projects__project:last-of-type hr {
   display: none;
 }
-main #projects-section .projects__project {
-  display: flex;
-  flex-direction: column;
-}
-main #projects-section .projects__project--img {
-  position: relative;
-  padding: 2rem 0;
-  margin: 2rem;
-  height: 500px;
-  border-radius: 35px;
-  border: 2px solid #e0ff1b;
-  overflow: hidden;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-main #projects-section .projects__project--img::before {
-  position: absolute;
-  content: "";
-  width: 98%;
-  height: 98%;
-  border: 6px solid black;
-  top: 0;
-  left: -3px;
-  border-radius: 35px;
-}
-main #projects-section .projects__project--img::after {
-  position: absolute;
-  content: "";
-  width: 20%;
-  height: 2%;
-  background-color: black;
-  top: -1px;
-  right: 50%;
-  transform: translateX(50%);
-  border-radius: 20px;
-}
-main #projects-section .projects__project .first {
+main .projects-section .projects__project .first {
   background-image: url(../assets/gptquizbuilder.jpeg);
 }
-main #projects-section .projects__project .second {
+main .projects-section .projects__project .second {
   background-image: url(../assets/tamagotchi.jpeg);
 }
-main #projects-section .projects__project .third {
+main .projects-section .projects__project .third {
   background-image: url(../assets/fischkapp.jpeg);
 }
-main #projects-section .projects__project .fourth {
+main .projects-section .projects__project .fourth {
   background-image: url(../assets/memorygame.jpeg);
 }
-main #projects-section .projects__project--title {
+main .projects-section .projects__project--title {
   font-size: 2.5rem;
-  margin-top: 2rem;
+  margin-top: 4rem;
   text-align: center;
   z-index: 1;
   font-weight: 300;
   letter-spacing: 1px;
 }
-main #projects-section .projects__project--title span {
+main .projects-section .projects__project--title span {
   color: #e0ff1b;
 }
-main #projects-section .projects__project--description {
+main .projects-section .projects__project--description {
   padding: 1rem;
   text-align: left;
 }
-main #projects-section .projects__project--description::after {
+main .projects-section .projects__project--description::after {
   content: ".";
   color: #e0ff1b;
 }
-main #projects-section .projects__project--links {
+main .projects-section .projects__project--links {
   display: flex;
   gap: 2rem;
   margin: 0 0 2rem 0;
   justify-content: flex-end;
   margin-right: 1.5rem;
 }
-main #projects-section .projects__project--techstack {
+main .projects-section .projects__project--techstack {
   margin: 2rem 0px;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-main #projects-section .projects__project--techstack p {
+main .projects-section .projects__project--techstack p {
   color: #e0ff1b;
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
 }
-main #projects-section .projects__project--techstack ul {
+main .projects-section .projects__project--techstack ul {
   display: flex;
   gap: 1rem;
   list-style: none;
 }
-main #projects-section .projects__project--techstack ul li img {
+main .projects-section .projects__project--techstack ul li img {
   width: 40px;
   border-radius: 8px;
   height: 40px;
 }
-main #projects-section hr {
+main .projects-section .project__present {
+  margin: 2rem 0;
+  display: flex;
+}
+main .projects-section .project__present .right {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+main .projects-section .project__present .first {
+  background-image: url(../assets/gptquizbuilder.jpeg);
+}
+main .projects-section .project__present .second {
+  background-image: url(../assets/tamagotchi.jpeg);
+}
+main .projects-section .project__present .third {
+  background-image: url(../assets/fischkapp.jpeg);
+}
+main .projects-section .project__present .fourth {
+  background-image: url(../assets/memorygame.jpeg);
+}
+main .projects-section hr {
   width: 100%;
   background-color: #fff;
   height: 2px;
   color: #fff;
 }
+main .projects-section .desktop {
+  display: none;
+  width: 100%;
+  margin: 4rem 0;
+}
+main .projects-section .desktop .phone {
+  background-size: contain;
+}
+main .projects-section .desktop .phone .projects__project--title {
+  margin-bottom: 4rem;
+}
+main .projects-section .desktop .right {
+  width: 50%;
+}
+main .projects-section .desktop .right .projects__project--title {
+  margin-bottom: 3rem;
+}
+main .projects-section .desktop .right .projects__project--links {
+  margin-top: 10rem;
+}
+main .about p {
+  margin-top: 4rem;
+}
 
 @media (min-width: 576px) {
-  header .nav-desktop {
-    display: block;
-  }
-  header .nav-mobile {
-    display: none;
+  main .projects-section .projects__project--title {
+    font-size: 2.8rem;
   }
 }
 @media (min-width: 768px) {
@@ -415,27 +453,56 @@ main #projects-section hr {
   header .nav-mobile {
     display: none;
   }
-  .landing__text {
-    width: 500px;
+  main .heading {
+    font-size: 3.6rem;
   }
-}
-@media (min-width: 996px) {
-  main .landing {
-    display: flex;
+  main p {
+    font-size: 1.8rem;
   }
   main .landing h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   main .landing h2,
   main .landing h3 {
-    font-size: 5rem;
+    font-size: 4rem;
   }
   main .landing p {
-    font-size: 2rem;
+    font-size: 1.8rem;
+  }
+  main .landing__links a .resumeBtn {
+    font-size: 2.5rem;
+  }
+  main .projects-section .desktop {
+    display: flex;
+  }
+  main .projects-section .mobile {
+    display: none;
+  }
+  main .projects-section .projects__project--title {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 996px) {
+  main p {
+    font-size: 2.2rem;
+  }
+  .heading {
+    font-size: 4rem;
+    margin-bottom: 10rem;
+  }
+  .about p {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  main .landing {
+    display: flex;
   }
   main .landing__text {
-    max-width: 1000px;
+    max-width: 1200px;
     font-weight: 300;
+  }
+  main .landing__text p {
+    width: 900px;
   }
   main .landing__links a .resumeBtn {
     font-size: 3rem;
@@ -456,10 +523,13 @@ main #projects-section hr {
     font-size: 2rem;
   }
   main .landing__text {
-    max-width: 1000px;
+    max-width: 1200px;
     font-weight: 300;
   }
   main .landing__links a .resumeBtn {
     font-size: 3rem;
+  }
+  main .projects-section .projects__project--title {
+    font-size: 5rem;
   }
 }/*# sourceMappingURL=style.css.map */
