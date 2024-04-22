@@ -226,6 +226,7 @@ header .hamburger__inner::after {
 }
 header .hamburger--active .hamburger__inner {
   background-color: transparent;
+  outline: 1px transparent;
 }
 header .hamburger--active .hamburger__inner:before {
   transform: translateY(10px) rotate(45deg);

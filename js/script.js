@@ -8,6 +8,11 @@ const handleClick = () => {
 	hamburger.classList.toggle('hamburger--active');
    nav.classList.toggle('navigation--active');
    blur.classList.toggle('blur--active')
+   if (hamburger.classList.contains('hamburger--active')) {
+      document.body.style.overflow = 'hidden'
+   } else {
+      document.body.style.overflow = ''
+   }
 };
 
 navLinks.forEach(link => {
@@ -15,6 +20,7 @@ navLinks.forEach(link => {
       nav.classList.remove('navigation--active');
 		hamburger.classList.remove('hamburger--active');
       blur.classList.remove('blur--active')
+      document.body.style.overflow = ''
 	});
 });
 
