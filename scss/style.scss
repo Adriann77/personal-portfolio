@@ -1,5 +1,4 @@
 @use 'colors';
-@use 'mixins';
 @import './components';
 
 * {
@@ -22,37 +21,37 @@ body {
 
 //NAV
 
-.nav-desktop {
-	display: none;
-	width: 100vw;
-	background-color: colors.$black;
-	position: fixed;
-	z-index: 1000;
-	top: 0;
+header {
+	.nav-desktop {
+		display: none;
+		width: 100vw;
+		background-color: colors.$black;
+		position: fixed;
+		z-index: 1000;
+		top: 0;
+		transition: all 0.3s;
 
-	ul {
-		display: flex;
-		justify-content: flex-end;
-		gap: 6rem;
-		align-items: center;
-		height: 10rem;
-		padding: 0 2rem;
-		li {
-			list-style: none;
-			a {
-				font-size: 2rem;
-				color: colors.$white;
-				text-decoration: none;
-				transition: colors ease-in-out 0.3s;
-				&:hover {
-					color: colors.$lime;
+		ul {
+			display: flex;
+			justify-content: flex-end;
+			gap: 6rem;
+			align-items: center;
+			height: 10rem;
+			padding: 0 2rem;
+			li {
+				list-style: none;
+				a {
+					font-size: 2rem;
+					color: colors.$white;
+					text-decoration: none;
+					transition: colors ease-in-out 0.3s;
+					&:hover {
+						color: colors.$lime;
+					}
 				}
 			}
 		}
 	}
-}
-
-header {
 	.nav-mobile {
 		top: 0;
 		overflow: hidden;
@@ -279,7 +278,6 @@ main {
 				display: none;
 			}
 		}
-	
 
 		.projects__project {
 			.first {
@@ -388,17 +386,13 @@ main {
 			color: #fff;
 		}
 
-        	.desktop {
+		.desktop {
 			display: none;
 			width: 100%;
-            margin: 4rem 0;
-
+			margin: 4rem 0;
 
 			.phone {
-
 				background-size: contain;
-                
-                
 
 				.projects__project--title {
 					margin-bottom: 4rem;
@@ -407,18 +401,14 @@ main {
 
 			.right {
 				width: 50%;
-                .projects__project--title{
-                    margin-bottom: 3rem;
-                }
-                .projects__project--links{
-                    margin-top: 10rem;
-                }
+				.projects__project--title {
+					margin-bottom: 3rem;
+				}
+				.projects__project--links {
+					margin-top: 10rem;
+				}
 			}
 		}
-
-
-
-
 	}
 
 	// ABOUT SECTION

@@ -22,9 +22,10 @@
 
     <header>
         <nav>
+          
 
             <div class="nav nav-mobile">
-                <button class="hamburger">
+                <button aria-label="hamburger icon" class="hamburger">
                     <span class="hamburger__box">
                         <span class="hamburger__inner"></span>
                     </span>
@@ -35,11 +36,8 @@
                         <li class="navigation__item"><a href="#">Home</a></li>
                         <li class="navigation__item"><a href="#about">About me</a></li>
                         <li class="navigation__item"><a href="#projects-section">Projects</a></li>
-
-
                     </ul>
                 </div>
-
             </div>
 
 
@@ -57,6 +55,7 @@
     </header>
 
     <main>
+        <div class="blur "></div>
         <div class="wrapper">
             <section id="landing" class="landing">
 
@@ -68,14 +67,16 @@
                         I am a self-taught Front-end Developer who fell in love with coding and styling pages</p>
                 </div>
                 <div class="landing__links">
-                    <a href="./Adrian_Klimas_CV.pdf" target="_blank" >
+                    <a href="./Adrian_Klimas_CV.pdf" target="_blank">
 
                         <button class="resumeBtn"><i class="fa-solid fa-download"></i> Resume</button>
                     </a>
                     <div class="landing__social icon">
-                        <a target="_blank" href="https://github.com/Adriann77"><i class="fa-brands fa-github"></i>
+                        <a aria-label="github" target="_blank" href="https://github.com/Adriann77"><i
+                                class="fa-brands fa-github"></i>
                         </a>
-                        <a target="_blank" href="https://www.linkedin.com/in/adrian-klimas-87b169281/"><i
+                        <a aria-label="linkedin" target="_blank"
+                            href="https://www.linkedin.com/in/adrian-klimas-87b169281/"><i
                                 class="fa-brands fa-linkedin"></i></a>
                     </div>
                 </div>
@@ -84,11 +85,14 @@
 
             <section id="about" class="about section">
                 <h3 class="heading">About me</h3>
-                <p>I'm a driven novice programmer with a year and a half of experience specializing in Front-end development. I'm dedicated
-                to honing my skills through industry training courses and frequently engage in hackathons to expand my knowledge.</p>
-                <p>Outside of coding, I find joy in exploring nature through hiking, camping, and sightseeing. In my downtime, I'm an avid
-                chess player and enjoy challenging myself with board games and logic puzzles</p>
-             
+                <p>I'm a driven novice programmer with a year and a half of experience specializing in Front-end
+                    development. I'm dedicated
+                    to honing my skills through industry training courses and frequently engage in hackathons to expand
+                    my knowledge.</p>
+                <p>Outside of coding, I find joy in exploring nature through hiking, camping, and sightseeing. In my
+                    downtime, I'm an avid
+                    chess player and enjoy challenging myself with board games and logic puzzles</p>
+
             </section>
 
             <section class="section projects-section" id="projects-section">
@@ -114,10 +118,10 @@
                         </div>
                         <div>
                             <div class="projects__project--links">
-                                <a class="projects__project--github icon" target="_blank"
+                                <a aria-label="github-icon" class="projects__project--github icon" target="_blank"
                                     href="https://github.com/Adriann77/GPTQuizBuilder"><i
                                         class="fa-brands fa-github"></i></a>
-                                <a class="projects__project--live icon" target="_blank"
+                                <a aria-label="live preview icon" class="projects__project--live icon" target="_blank"
                                     href="https://gpt-quizbuilder.netlify.app/"><i
                                         class="fa-solid fa-arrow-up-right-from-square"></i></a>
                             </div>
@@ -136,20 +140,20 @@
                             <div class="projects__project--techstack">
                                 <p>Technologies used:</p>
                                 <ul>
-                                    <li><img src="./assets/typescript.png" alt=""></li>
-                                    <li><img src="./assets/tailwind.png" alt=""></li>
-                                    <li><img src="./assets/react.png" alt=""></li>
-                                    <li><img src="./assets/playwright.png" alt=""></li>
+                                    <li><img loading="lazy" src="./assets/typescript.png" alt=""></li>
+                                    <li><img loading="lazy" src="./assets/tailwind.png" alt=""></li>
+                                    <li><img loading="lazy" src="./assets/react.png" alt=""></li>
+                                    <li><img loading="lazy" src="./assets/playwright.png" alt=""></li>
 
                                 </ul>
                             </div>
                             <div>
                                 <div class="projects__project--links">
-                                    <a class="projects__project--github icon" target="_blank"
+                                    <a aria-label="github icon" class="projects__project--github icon" target="_blank"
                                         href="https://github.com/Adriann77/GPTQuizBuilder"><i
                                             class="fa-brands fa-github"></i></a>
-                                    <a class="projects__project--live icon" target="_blank"
-                                        href="https://gpt-quizbuilder.netlify.app/"><i
+                                    <a aria-label="live preview icon" class="projects__project--live icon"
+                                        target="_blank" href="https://gpt-quizbuilder.netlify.app/"><i
                                             class="fa-solid fa-arrow-up-right-from-square"></i></a>
                                 </div>
                             </div>
@@ -170,19 +174,18 @@
                             <div class="projects__project--techstack">
                                 <p>Technologies used:</p>
                                 <ul>
-                                    <li><img src="./assets/javascript.png" alt=""></li>
-                                    <li><img src="./assets/scss.png" alt=""></li>
-                                    <li><img src="./assets/html.webp" alt=""></li>
-
-                                    <li><img src="./assets/figma.png" alt=""></li>
+                                    <li><img loading="lazy" src="./assets/javascript.png" alt=""></li>
+                                    <li><img loading="lazy" src="./assets/scss.png" alt=""></li>
+                                    <li><img loading="lazy" src="./assets/figma.png" alt=""></li>
+                                    <li><img loading="lazy" src="./assets/html.webp" alt=""></li>
 
                                 </ul>
                             </div>
                             <div class="projects__project--links">
-                                <a class="projects__project--github icon" target="_blank"
+                                <a aria-label="github icon" class="projects__project--github icon" target="_blank"
                                     href="https://github.com/Adriann77/tamagotchi"><i
                                         class="fa-brands fa-github"></i></a>
-                                <a class="projects__project--live icon" target="_blank"
+                                <a aria-label="live preview icon" class="projects__project--live icon" target="_blank"
                                     href="https://adriann77.github.io/tamagotchi/"><i
                                         class="fa-solid fa-arrow-up-right-from-square"></i></a>
                             </div>
@@ -201,20 +204,19 @@
                                 <div class="projects__project--techstack">
                                     <p>Technologies used:</p>
                                     <ul>
-                                        <li><img src="./assets/javascript.png" alt=""></li>
-                                        <li><img src="./assets/scss.png" alt=""></li>
-                                        <li><img src="./assets/html.webp" alt=""></li>
-
-                                        <li><img src="./assets/figma.png" alt=""></li>
+                                        <li><img loading="lazy" src="./assets/javascript.png" alt=""></li>
+                                        <li><img loading="lazy" src="./assets/scss.png" alt=""></li>
+                                        <li><img loading="lazy" src="./assets/figma.png" alt=""></li>
+                                        <li><img loading="lazy" src="./assets/html.webp" alt=""></li>
 
                                     </ul>
                                 </div>
                                 <div class="projects__project--links">
-                                    <a class="projects__project--github icon" target="_blank"
+                                    <a aria-label="github icon" class="projects__project--github icon" target="_blank"
                                         href="https://github.com/Adriann77/tamagotchi"><i
                                             class="fa-brands fa-github"></i></a>
-                                    <a class="projects__project--live icon" target="_blank"
-                                        href="https://adriann77.github.io/tamagotchi/"><i
+                                    <a aria-label="live preview icon" class="projects__project--live icon"
+                                        target="_blank" href="https://adriann77.github.io/tamagotchi/"><i
                                             class="fa-solid fa-arrow-up-right-from-square"></i></a>
                                 </div>
                             </div>
@@ -236,18 +238,18 @@
                             <div class="projects__project--techstack">
                                 <p>Technologies used:</p>
                                 <ul>
-                                    <li><img src="./assets/react.png" alt=""></li>
-                                    <li><img src="./assets/typescript.png" alt=""></li>
-                                    <li><img src="./assets/scss.png" alt=""></li>
-                                    <li><img src="/assets/jest.png" alt=""></li>
-                                    <li><img src="/assets/figma.png" alt=""></li>
+                                    <li><img loading="lazy" src="./assets/react.png" alt=""></li>
+                                    <li><img loading="lazy" src="./assets/typescript.png" alt=""></li>
+                                    <li><img loading="lazy" src="./assets/scss.png" alt=""></li>
+                                    <li><img loading="lazy" src="/assets/figma.png" alt=""></li>
+                                    <li><img loading="lazy" src="/assets/jest.png" alt=""></li>
                                 </ul>
                             </div>
                             <div class="projects__project--links">
-                                <a class="projects__project--github icon" target="_blank"
+                                <a aria-label="github icon" class="projects__project--github icon" target="_blank"
                                     href="https://github.com/Adriann77/fischkapp"><i
                                         class="fa-brands fa-github"></i></a>
-                                <a class="projects__project--live icon" target="_blank"
+                                <a aria-label="live preview icon" class="projects__project--live icon" target="_blank"
                                     href="https://fischkapp.netlify.app/"><i
                                         class="fa-solid fa-arrow-up-right-from-square"></i></a>
                             </div>
@@ -271,16 +273,16 @@
                                         <li><img src="./assets/react.png" alt=""></li>
                                         <li><img src="./assets/typescript.png" alt=""></li>
                                         <li><img src="./assets/scss.png" alt=""></li>
-                                        <li><img src="/assets/jest.png" alt=""></li>
                                         <li><img src="/assets/figma.png" alt=""></li>
+                                        <li><img src="/assets/jest.png" alt=""></li>
                                     </ul>
                                 </div>
                                 <div class="projects__project--links">
-                                    <a class="projects__project--github icon" target="_blank"
+                                    <a aria-label="github icon" class="projects__project--github icon" target="_blank"
                                         href="https://github.com/Adriann77/fischkapp"><i
                                             class="fa-brands fa-github"></i></a>
-                                    <a class="projects__project--live icon" target="_blank"
-                                        href="https://fischkapp.netlify.app/"><i
+                                    <a aria-label="live preview icon" class="projects__project--live icon"
+                                        target="_blank" href="https://fischkapp.netlify.app/"><i
                                             class="fa-solid fa-arrow-up-right-from-square"></i></a>
                                 </div>
                             </div>
@@ -299,16 +301,16 @@
                             <div class="projects__project--techstack">
                                 <p>Technologies used:</p>
                                 <ul>
-                                    <li><img src="./assets/react.png" alt=""></li>
-                                    <li><img src="./assets/typescript.png" alt=""></li>
-                                    <li><img src="./assets/scss.png" alt=""></li>
+                                    <li><img loading="lazy" src="./assets/react.png" alt=""></li>
+                                    <li><img loading="lazy" src="./assets/typescript.png" alt=""></li>
+                                    <li><img loading="lazy" src="./assets/scss.png" alt=""></li>
                                 </ul>
                             </div>
                             <div class="projects__project--links">
-                                <a class="projects__project--github icon" target="_blank"
+                                <a aria-label="github icon" class="projects__project--github icon" target="_blank"
                                     href="https://github.com/Adriann77/MemoryGame"><i
                                         class="fa-brands fa-github"></i></a>
-                                <a class="projects__project--live icon" target="_blank"
+                                <a aria-label="live preview icon" class="projects__project--live icon" target="_blank"
                                     href="https://memory-game-byadr.netlify.app/"><i
                                         class="fa-solid fa-arrow-up-right-from-square"></i></a>
                             </div>
@@ -327,17 +329,17 @@
                                 <div class="projects__project--techstack">
                                     <p>Technologies used:</p>
                                     <ul>
-                                        <li><img src="./assets/react.png" alt=""></li>
-                                        <li><img src="./assets/typescript.png" alt=""></li>
-                                        <li><img src="./assets/scss.png" alt=""></li>
+                                        <li><img loading="lazy" src="./assets/react.png" alt=""></li>
+                                        <li><img loading="lazy" src="./assets/typescript.png" alt=""></li>
+                                        <li><img loading="lazy" src="./assets/scss.png" alt=""></li>
                                     </ul>
                                 </div>
                                 <div class="projects__project--links">
-                                    <a class="projects__project--github icon" target="_blank"
+                                    <a aria-label="github icon" class="projects__project--github icon" target="_blank"
                                         href="https://github.com/Adriann77/MemoryGame"><i
                                             class="fa-brands fa-github"></i></a>
-                                    <a class="projects__project--live icon" target="_blank"
-                                        href="https://memory-game-byadr.netlify.app/"><i
+                                    <a aria-label="live preview icon" class="projects__project--live icon"
+                                        target="_blank" href="https://memory-game-byadr.netlify.app/"><i
                                             class="fa-solid fa-arrow-up-right-from-square"></i></a>
                                 </div>
                             </div>
