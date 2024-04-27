@@ -282,11 +282,14 @@ main {
 
 		.projects__project {
 			.first {
-				background-image: url(../assets/gptquizbuilderr.jpeg);
+				background-image: url(../assets/gptquizbuilderr.png);
+				background-size: contain;
+				
 			}
-
+			
 			.second {
 				background-image: url(../assets/tamagotchi.jpeg);
+
 			}
 
 			.third {
@@ -308,6 +311,23 @@ main {
 					color: colors.$lime;
 				}
 			}
+
+
+// data-aos="fade-up"
+//     data-aos-offset="200"
+//     data-aos-delay="50"
+//     data-aos-duration="1000"
+//     data-aos-easing="ease-in-out"
+//     data-aos-mirror="true"
+//     data-aos-once="false"
+//     data-aos-anchor-placement="top-center"
+
+
+
+
+
+
+
 
 			&--description {
 				padding: 1rem;
