@@ -347,17 +347,17 @@ main .projects-section .projects__project:last-of-type hr {
   display: none;
 }
 main .projects-section .projects__project .first {
-  background-image: url(../assets/gptquizbuilderr.png);
+  background-image: url(../../dist/img/gptquizbuilderr.png);
   background-size: contain;
 }
 main .projects-section .projects__project .second {
-  background-image: url(../assets/tamagotchi.jpeg);
+  background-image: url(../../dist/img/tamagotchi.jpeg);
 }
 main .projects-section .projects__project .third {
-  background-image: url(../assets/fischkapp.jpeg);
+  background-image: url(../../dist/img/fischkapp.jpeg);
 }
 main .projects-section .projects__project .fourth {
-  background-image: url(../assets/memorygame.jpeg);
+  background-image: url(../../dist/img/memorygame.jpeg);
 }
 main .projects-section .projects__project--title {
   font-size: 2.5rem;
@@ -416,16 +416,16 @@ main .projects-section .project__present .right {
   width: 50%;
 }
 main .projects-section .project__present .first {
-  background-image: url(../assets/gptquizbuilder.jpeg);
+  background-image: url(../../dist/img/gptquizbuilder.jpeg);
 }
 main .projects-section .project__present .second {
-  background-image: url(../assets/tamagotchi.jpeg);
+  background-image: url(../../dist/img/tamagotchi.jpeg);
 }
 main .projects-section .project__present .third {
-  background-image: url(../assets/fischkapp.jpeg);
+  background-image: url(../../dist/img/fischkapp.jpeg);
 }
 main .projects-section .project__present .fourth {
-  background-image: url(../assets/memorygame.jpeg);
+  background-image: url(../../dist/img/memorygame.jpeg);
 }
 main .projects-section hr {
   width: 100%;
@@ -451,7 +451,7 @@ main .projects-section .desktop .right .projects__project--title {
   margin-bottom: 3rem;
 }
 main .projects-section .desktop .right .projects__project--links {
-  margin-top: 10rem;
+  margin-top: 5rem;
 }
 main .about p {
   margin-top: 4rem;

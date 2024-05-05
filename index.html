@@ -14,17 +14,13 @@
         rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./dist/css/style.min.css">
 </head>
 
 <body>
 
-
-
-
     <header>
         <nav>
-
 
             <div class="nav nav-mobile">
                 <button aria-label="hamburger icon" class="hamburger">
@@ -43,7 +39,7 @@
             </div>
 
 
-            <div class="nav nav-desktop ">
+            <div class="nav nav-desktop " data-aos="fade-down" data-aos-delay="2000">
                 <div class="wrapper">
                     <ul>
                         <li class="navigation__item"><a href="#">Home</a></li>
@@ -61,14 +57,14 @@
         <div class="wrapper">
             <section id="landing" class="landing">
 
-                <div class="landing__text" >
-                    <h1 data-aos="fade-right">Hello, my name is</h1>
-                    <h2 data-aos="fade-left" data-aos-delay="500" data-aos-duration="1500">Adrian Klimas</h2>
-                    <h3 data-aos="fade-left" data-aos-delay="700" >Intern Frontend Developer</h3>
-                    <p data-aos="fade-left" data-aos-delay="700"  class="landing__description">
+                <div class="landing__text">
+                    <h1 data-aos="fade-up">Hello, my name is</h1>
+                    <h2 data-aos="fade-up" data-aos-delay="800" data-aos-duration="1500">Adrian Klimas</h2>
+                    <h3 data-aos="fade-up" data-aos-delay="1000">Intern Frontend Developer</h3>
+                    <p data-aos="fade-up" data-aos-delay="1000" class="landing__description">
                         I am a self-taught Front-end Developer who fell in love with coding and styling pages</p>
                 </div>
-                <div data-aos="fade-up" data-aos-delay="1100" class="landing__links">
+                <div data-aos="fade-up" data-aos-delay="1000" class="landing__links">
                     <a href="./Adrian_Klimas_CV.pdf" target="_blank">
 
                         <button class="resumeBtn"><i class="fa-solid fa-download"></i> Resume</button>
@@ -85,76 +81,91 @@
 
             </section>
 
-            <section  id="about" class="about section">
-                <h3 data-aos="fade-up" class="heading">About me</h3>
-                <p data-aos="fade-right">I'm a driven novice programmer with a year and a half of experience specializing in Front-end
+            <section id="about" class="about section">
+                <h3 data-aos="fade-right" class="heading">About me</h3>
+                <p data-aos="fade-up">I'm a driven novice programmer with a year and a half of experience
+                    specializing in Front-end
                     development. I'm dedicated
                     to honing my skills through industry training courses and frequently engage in hackathons to expand
                     my knowledge.</p>
-                <p data-aos="fade-right" data-aos-delay="400">Outside of coding, I find joy in exploring nature through hiking, camping, and sightseeing. In my
+                <p data-aos="fade-up">Outside of coding, I find joy in exploring nature through
+                    hiking, camping, and sightseeing. In my
                     downtime, I'm an avid
                     chess player and enjoy challenging myself with board games and logic puzzles</p>
 
             </section>
 
             <section class="section projects-section" id="projects-section">
-                <h3 data-aos="fade-up" class="heading">Check out my projects</h3>
+                <h3 data-aos="fade-right" class="heading">Check out my projects</h3>
                 <div class="projects">
-                    <div class="projects__project mobile" data-aos="fade-up">
-                        <h4 class="projects__project--title">GPT-Quiz<span>Builder</span></h4>
-                        <div class="phone first" data-aos="flip-left"></div>
-                        <p data-aos="fade-up" class="projects__project--description">GPT-QuizBuilder, designed as part of the “100 commits”
-                            initiative. It is a project that uses the advanced capabilities
-                            of the OpenAI API to create personalized quizzes tailored to individual interests, as well
-                            as skill level.</p>
-                        <div class="projects__project--techstack">
-                            <p>Technologies used:</p>
-                            <ul>
-                                <li><img src="./assets/typescript.png" alt=""></li>
-                                <li><img src="./assets/tailwind.png" alt=""></li>
-                                <li><img src="./assets/react.png" alt=""></li>
-                                <li><img src="./assets/playwright.png" alt=""></li>
-
-                            </ul>
-                        </div>
-                        <div>
-                            <div class="projects__project--links">
-                                <a aria-label="github-icon" class="projects__project--github icon" target="_blank"
-                                    href="https://github.com/Adriann77/GPTQuizBuilder"><i
-                                        class="fa-brands fa-github"></i></a>
-                                <a aria-label="live preview icon" class="projects__project--live icon" target="_blank"
-                                    href="https://gpt-quizbuilder.netlify.app/"><i
-                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                            </div>
-                        </div>
-                        <hr>
-                    </div>
-                    <div class="projects__project desktop" data-aos="fade-up">
-                        <div class="phone first"></div>
-                        <div class="right">
+                    <div class="projects__project">
+                        <div class="projects__project mobile">
                             <h4 class="projects__project--title">GPT-Quiz<span>Builder</span></h4>
-                            <p class="projects__project--description">GPT-QuizBuilder, designed as part of the “100
-                                commits” initiative. It is a project that uses the advanced capabilities
+                            <div class="phone first" data-aos="flip-left" data-aos-duration="2500"></div>
+                            <p data-aos="fade-up" class="projects__project--description" data-aos="fade-up">
+                                GPT-QuizBuilder, designed as part
+                                of the “100 commits”
+                                initiative. It is a project that uses the advanced capabilities
                                 of the OpenAI API to create personalized quizzes tailored to individual interests, as
-                                well as skill level.</p>
-                            <div class="projects__project--techstack">
+                                well
+                                as skill level.</p>
+                            <div class="projects__project--techstack" data-aos="fade-up">
                                 <p>Technologies used:</p>
                                 <ul>
-                                    <li><img loading="lazy" src="./assets/typescript.png" alt=""></li>
-                                    <li><img loading="lazy" src="./assets/tailwind.png" alt=""></li>
-                                    <li><img loading="lazy" src="./assets/react.png" alt=""></li>
-                                    <li><img loading="lazy" src="./assets/playwright.png" alt=""></li>
+                                    <li><img src="./dist/img/typescript.png" alt="typescript icontypescript"></li>
+                                    <li><img src="./dist/img/tailwind.png" alt="tailwind"></li>
+                                    <li><img src="./dist/img/react.png" alt="react iconreact"></li>
+                                    <li><img src="./dist/img/playwright.png" alt="playwright"></li>
 
                                 </ul>
                             </div>
                             <div>
-                                <div class="projects__project--links">
-                                    <a aria-label="github icon" class="projects__project--github icon" target="_blank"
+                                <div class="projects__project--links" data-aos="fade-up">
+                                    <a aria-label="github-icon" class="projects__project--github icon" target="_blank"
                                         href="https://github.com/Adriann77/GPTQuizBuilder"><i
                                             class="fa-brands fa-github"></i></a>
                                     <a aria-label="live preview icon" class="projects__project--live icon"
                                         target="_blank" href="https://gpt-quizbuilder.netlify.app/"><i
                                             class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="projects__project desktop">
+                            <div class="phone first" data-aos="flip-left" data-aos-duration="2500"
+                                data-aos-duration="2500"></div>
+                            <div class="right">
+                                <h4 class="projects__project--title" data-aos="fade-up">GPT-Quiz<span>Builder</span>
+                                </h4>
+                                <p class="projects__project--description" data-aos="fade-up">
+                                    GPT-QuizBuilder, designed as part of the “100
+                                    commits” initiative. It is a project that uses the advanced capabilities
+                                    of the OpenAI API to create personalized quizzes tailored to individual interests,
+                                    as
+                                    well as skill level.</p>
+                                <div class="projects__project--techstack" data-aos="fade-up">
+                                    <p>Technologies used:</p>
+                                    <ul>
+                                        <li><img loading="lazy" src="./dist/img/typescript.png"
+                                                alt="typescript icontypescript icon">
+                                        </li>
+                                        <li><img loading="lazy" src="./dist/img/tailwind.png" alt="tailwind icon"></li>
+                                        <li><img loading="lazy" src="./dist/img/react.png" alt="react iconreact icon">
+                                        </li>
+                                        <li><img loading="lazy" src="./dist/img/playwright.png" alt="playwright icon">
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <div>
+                                    <div class="projects__project--links" data-aos="fade-up">
+                                        <a aria-label="github icon" class="projects__project--github icon"
+                                            target="_blank" href="https://github.com/Adriann77/GPTQuizBuilder"><i
+                                                class="fa-brands fa-github"></i></a>
+                                        <a aria-label="live preview icon" class="projects__project--live icon"
+                                            target="_blank" href="https://gpt-quizbuilder.netlify.app/"><i
+                                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -163,25 +174,26 @@
                     <div class="projects__project">
                         <div class="mobile" data-aos="fade-up">
                             <h4 class="projects__project--title" data-aos="fade-up">Tama<span>gotchi</span></h4>
-                            <div class="phone second" data-aos="flip-right"></div>
+                            <div class="phone second " data-aos="flip-left" data-aos-duration="2500"></div>
 
-                            <p class="projects__project--description">This project is a web-based recreation of the
+                            <p class="projects__project--description" data-aos="fade-up">This
+                                project is a web-based recreation of the
                                 classic
                                 This project is a recreation of the classic Tamagotchi game, offering users a nostalgic
                                 virtual pet experience. Tamago
                                 can eat, play and sleep. There are 8 different states that the tamago can enter during
                                 the game</p>
-                            <div class="projects__project--techstack">
+                            <div class="projects__project--techstack" data-aos="fade-up">
                                 <p>Technologies used:</p>
                                 <ul>
-                                    <li><img loading="lazy" src="./assets/javascript.png" alt=""></li>
-                                    <li><img loading="lazy" src="./assets/scss.png" alt=""></li>
-                                    <li><img loading="lazy" src="./assets/figma.png" alt=""></li>
-                                    <li><img loading="lazy" src="./assets/html.webp" alt=""></li>
+                                    <li><img loading="lazy" src="./dist/img/javascript.png" alt="javascript icon"></li>
+                                    <li><img loading="lazy" src="./dist/img/scss.png" alt="scss icon"></li>
+                                    <li><img loading="lazy" src="./dist/img/figma.png" alt="figma icon"></li>
+                                    <li><img loading="lazy" src="./dist/img/html.webp" alt="html icon"></li>
 
                                 </ul>
                             </div>
-                            <div class="projects__project--links">
+                            <div class="projects__project--links" data-aos="fade-right" data-aos-delay="1300">
                                 <a aria-label="github icon" class="projects__project--github icon" target="_blank"
                                     href="https://github.com/Adriann77/tamagotchi"><i
                                         class="fa-brands fa-github"></i></a>
@@ -192,26 +204,29 @@
                             <hr>
                         </div>
                         <div class="desktop" data-aos="fade-up">
-                            <div class="phone second" data-aos="flip-right"></div>
+                            <div class="phone second data-aos=" flip-left" data-aos-duration="2500"" data-aos="
+                                flip-right"></div>
                             <div class="right">
 
                                 <h4 class="projects__project--title" data-aos="fade-up">Tama<span>gotchi</span></h4>
 
-                                <p class="projects__project--description">This project is a recreation of the classic
+                                <p class="projects__project--description" data-aos="fade-up">This
+                                    project is a recreation of the classic
                                     Tamagotchi game, offering users a nostalgic virtual pet experience. Tamago
                                     can eat, play and sleep. There are 8 different states that the tamago can enter
                                     during the game</p>
-                                <div class="projects__project--techstack">
+                                <div class="projects__project--techstack" data-aos="fade-up">
                                     <p>Technologies used:</p>
                                     <ul>
-                                        <li><img loading="lazy" src="./assets/javascript.png" alt=""></li>
-                                        <li><img loading="lazy" src="./assets/scss.png" alt=""></li>
-                                        <li><img loading="lazy" src="./assets/figma.png" alt=""></li>
-                                        <li><img loading="lazy" src="./assets/html.webp" alt=""></li>
+                                        <li><img loading="lazy" src="./dist/img/javascript.png" alt="javascript icon">
+                                        </li>
+                                        <li><img loading="lazy" src="./dist/img/scss.png" alt="scss icon"></li>
+                                        <li><img loading="lazy" src="./dist/img/figma.png" alt="figma icon"></li>
+                                        <li><img loading="lazy" src="./dist/img/html.webp" alt="html icon"></li>
 
                                     </ul>
                                 </div>
-                                <div class="projects__project--links">
+                                <div class="projects__project--links" data-aos="fade-up">
                                     <a aria-label="github icon" class="projects__project--github icon" target="_blank"
                                         href="https://github.com/Adriann77/tamagotchi"><i
                                             class="fa-brands fa-github"></i></a>
@@ -224,27 +239,28 @@
                         <hr>
                     </div>
                     <div class="projects__project">
-                        <div class="mobile" data-aos='fade-up'>
+                        <div class="mobile">
                             <h4 class="projects__project--title">Fischk<span>app</span></h4>
-                            <div class="phone third" data-aos="flip-right"></div>
+                            <div class="phone third" data-aos="flip-left" data-aos-duration="2500"
+                                data-aos="flip-right"></div>
 
-                            <p class="projects__project--description">
+                            <p class="projects__project--description" data-aos="fade-up">
                                 An application developed to replicate the concept of fiches for educational purposes.
                                 The design focuses on providing a
                                 user-friendly interface for creating, editing and deleting fiches. The app includes
                                 smooth animations for flipping
                                 cards, and is linked to a back-end for storing existing fiches, and adding new ones</p>
-                            <div class="projects__project--techstack">
+                            <div class="projects__project--techstack" data-aos="fade-up">
                                 <p>Technologies used:</p>
                                 <ul>
-                                    <li><img loading="lazy" src="./assets/react.png" alt=""></li>
-                                    <li><img loading="lazy" src="./assets/typescript.png" alt=""></li>
-                                    <li><img loading="lazy" src="./assets/scss.png" alt=""></li>
-                                    <li><img loading="lazy" src="./assets/figma.png" alt=""></li>
-                                    <li><img loading="lazy" src="./assets/jest.png" alt=""></li>
+                                    <li><img loading="lazy" src="./dist/img/react.png" alt="react icon"></li>
+                                    <li><img loading="lazy" src="./dist/img/typescript.png" alt="typescript icon"></li>
+                                    <li><img loading="lazy" src="./dist/img/scss.png" alt="scss icon"></li>
+                                    <li><img loading="lazy" src="./dist/img/figma.png" alt="figma icon"></li>
+                                    <li><img loading="lazy" src="./dist/img/jest.png" alt=""></li>
                                 </ul>
                             </div>
-                            <div class="projects__project--links">
+                            <div class="projects__project--links" data-aos="fade-right">
                                 <a aria-label="github icon" class="projects__project--github icon" target="_blank"
                                     href="https://github.com/Adriann77/fischkapp"><i
                                         class="fa-brands fa-github"></i></a>
@@ -254,28 +270,30 @@
                             </div>
                             <hr>
                         </div>
-                        <div class="desktop" data-aos="fade-up">
-                            <div class="phone third" data-aos="flip-right"></div>
+                        <div class="desktop">
+                            <div class="phone third" data-aos="flip-left" data-aos-duration="2500"
+                                data-aos="flip-right"></div>
                             <div class="right">
                                 <h4 class="projects__project--title">Fischk<span>app</span></h4>
 
-                                <p class="projects__project--description">An application developed to replicate the
+                                <p class="projects__project--description" data-aos="fade-up">An
+                                    application developed to replicate the
                                     concept of fiches for educational purposes. The design focuses on providing a
                                     user-friendly interface for creating, editing and deleting fiches. The app includes
                                     smooth animations for flipping
                                     cards, and is linked to a back-end for storing existing fiches, and adding new ones
                                 </p>
-                                <div class="projects__project--techstack">
+                                <div class="projects__project--techstack" data-aos="fade-up">
                                     <p>Technologies used:</p>
                                     <ul>
-                                        <li><img src="./assets/react.png" alt=""></li>
-                                        <li><img src="./assets/typescript.png" alt=""></li>
-                                        <li><img src="./assets/scss.png" alt=""></li>
-                                        <li><img src="./assets/figma.png" alt=""></li>
-                                        <li><img src="./assets/jest.png" alt=""></li>
+                                        <li><img src="./dist/img/react.png" alt="react icon"></li>
+                                        <li><img src="./dist/img/typescript.png" alt="typescript icon"></li>
+                                        <li><img src="./dist/img/scss.png" alt="scss icon"></li>
+                                        <li><img src="./dist/img/figma.png" alt="figma icon"></li>
+                                        <li><img src="./dist/img/jest.png" alt=""></li>
                                     </ul>
                                 </div>
-                                <div class="projects__project--links">
+                                <div class="projects__project--links" data-aos="fade-up">
                                     <a aria-label="github icon" class="projects__project--github icon" target="_blank"
                                         href="https://github.com/Adriann77/fischkapp"><i
                                             class="fa-brands fa-github"></i></a>
@@ -288,23 +306,24 @@
                         <hr>
                     </div>
                     <div class="projects__project">
-                        <div class="mobile" data-aos="fade-up">
+                        <div class="mobile">
                             <h4 class="projects__project--title">Memory <span>game</span></h4>
-                            <div class="phone fourth" data-aos="flip-left"></div>
+                            <div class="phone fourth " data-aos-duration="2500" data-aos="
+                                flip-left"></div>
 
-                            <p class="projects__project--description">
+                            <p class="projects__project--description" data-aos="fade-up">
                                 Memory Game is a classic memory matching game, where the goal is to find pairs of
                                 matching images. The app was developed
                                 using React and TypeScript in an arcade theme. Four difficulty levels are available</p>
-                            <div class="projects__project--techstack">
+                            <div class="projects__project--techstack" data-aos="fade-up">
                                 <p>Technologies used:</p>
                                 <ul>
-                                    <li><img loading="lazy" src="./assets/react.png" alt=""></li>
-                                    <li><img loading="lazy" src="./assets/typescript.png" alt=""></li>
-                                    <li><img loading="lazy" src="./assets/scss.png" alt=""></li>
+                                    <li><img loading="lazy" src="./dist/img/react.png" alt="react icon"></li>
+                                    <li><img loading="lazy" src="./dist/img/typescript.png" alt="typescript icon"></li>
+                                    <li><img loading="lazy" src="./dist/img/scss.png" alt="scss icon"></li>
                                 </ul>
                             </div>
-                            <div class="projects__project--links">
+                            <div class="projects__project--links" data-aos="fade-up">
                                 <a aria-label="github icon" class="projects__project--github icon" target="_blank"
                                     href="https://github.com/Adriann77/MemoryGame"><i
                                         class="fa-brands fa-github"></i></a>
@@ -315,24 +334,26 @@
                             <hr>
                         </div>
                         <div class="desktop" data-aos="fade-up">
-                            <div class="phone fourth" data-aos="flip-left"></div>
+                            <div class="phone fourth" data-aos-duration="2500" data-aos="
+                                flip-left"></div>
                             <div class="right">
                                 <h4 class="projects__project--title">Memory <span>game</span></h4>
 
-                                <p class="projects__project--description">
+                                <p class="projects__project--description" data-aos="fade-up">
                                     Memory Game is a classic memory matching game, where the goal is to find pairs of
                                     matching images. The app was developed
                                     using React and TypeScript in an arcade theme. Four difficulty levels are available
                                 </p>
-                                <div class="projects__project--techstack">
+                                <div class="projects__project--techstack" data-aos="fade-up">
                                     <p>Technologies used:</p>
                                     <ul>
-                                        <li><img loading="lazy" src="./assets/react.png" alt=""></li>
-                                        <li><img loading="lazy" src="./assets/typescript.png" alt=""></li>
-                                        <li><img loading="lazy" src="./assets/scss.png" alt=""></li>
+                                        <li><img loading="lazy" src="./dist/img/react.png" alt="react icon"></li>
+                                        <li><img loading="lazy" src="./dist/img/typescript.png" alt="typescript icon">
+                                        </li>
+                                        <li><img loading="lazy" src="./dist/img/scss.png" alt="scss icon"></li>
                                     </ul>
                                 </div>
-                                <div class="projects__project--links">
+                                <div class="projects__project--links" data-aos="fade-up">
                                     <a aria-label="github icon" class="projects__project--github icon" target="_blank"
                                         href="https://github.com/Adriann77/MemoryGame"><i
                                             class="fa-brands fa-github"></i></a>
@@ -353,8 +374,8 @@
 
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
- 
-    <script src="./js/script.js"></script>
+
+    <script src="./dist/js/script.min.js"></script>
 
 </body>
 
