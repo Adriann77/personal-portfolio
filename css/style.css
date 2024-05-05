@@ -452,6 +452,7 @@ main .projects-section .desktop .right .projects__project--title {
 }
 main .projects-section .desktop .right .projects__project--links {
   margin-top: 5rem;
+  margin-bottom: 1rem;
 }
 main .about p {
   margin-top: 4rem;
