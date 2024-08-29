@@ -274,30 +274,38 @@ main {
 	// PROJECTS //
 
 	.projects-section {
-		.projects__project:last-of-type {
-			hr {
-				display: none;
-			}
-		}
-
 		.projects__project {
-			.first {
-				background-image: url(../../dist/img/gptquizbuilderr.png);
-				background-size: contain;
-				
+			span {
+				a {
+					color: colors.$lime;
+				}
 			}
-			
-			.second {
-				background-image: url(../../dist/img/tamagotchi.jpeg);
-
+			p {
+				font-size: 1.5rem;
 			}
 
-			.third {
-				background-image: url(../../dist/img/fischkapp.jpeg);
-			}
+			.gpt-quiz-builder {
+				.first-paragraph {
+					margin-bottom: 2rem;
+				}
 
-			.fourth {
-				background-image: url(../../dist/img/memorygame.jpeg);
+				ul {
+					margin: 15px 0;
+					padding: 5px 0;
+					font-size: 2rem;
+					display: flex;
+					flex-direction: column;
+					gap: 0.75rem;
+				}
+
+				li {
+					margin-top: 2px;
+					margin-left: 3.5rem;
+					font-size: 1.5rem;
+					span {
+						color: colors.$lime;
+					}
+				}
 			}
 
 			&--title {
@@ -312,29 +320,12 @@ main {
 				}
 			}
 
-
-// data-aos="fade-up"
-//     data-aos-offset="200"
-//     data-aos-delay="50"
-//     data-aos-duration="1000"
-//     data-aos-easing="ease-in-out"
-//     data-aos-mirror="true"
-//     data-aos-once="false"
-//     data-aos-anchor-placement="top-center"
-
-
-
-
-
-
-
-
 			&--description {
 				padding: 1rem;
 				text-align: left;
 
 				&::after {
-					content: '.';
+					content: '';
 					color: colors.$lime;
 				}
 			}
