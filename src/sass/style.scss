@@ -287,19 +287,31 @@ main {
 	//ABOUT//
 
 	.about {
+		display: flex;
+		flex-direction: column;
+		text-align: left;
 		padding: 6px;
 		p {
 			margin-top: 4rem;
 		}
+
+		p::after{
+			content: '.';
+			color: colors.$lime;
+		}
 		ul {
+
 			display: flex;
+			align-self: flex-start;
+			place-self: start;
 			flex-direction: column;
 			gap: 0.5rem;
 			margin-top: 3rem;
-			font-size: 1.75rem;
+			font-size: 2rem;
 			li {
-				font-size: 1.5rem;
+				font-size: 1.75rem;
 				margin-left: 3rem;
+
 				a {
 					color: colors.$lime;
 				}
@@ -459,6 +471,10 @@ main {
 			}
 		}
 	}
+}
+
+.lime{
+	color: colors.$lime
 }
 
 // ABOUT SECTION
